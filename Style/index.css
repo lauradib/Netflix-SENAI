@@ -1,0 +1,22 @@
+.menuPC{
+    display: flex;
+
+}
+
+.menuMobile{
+    display: none;
+
+}
+
+@media screen and (max-width : 820px) {
+    
+    .menuPC{
+        display: none;
+    
+    }
+    
+    .menuMobile{
+        display: flex;
+    
+    }
+}
