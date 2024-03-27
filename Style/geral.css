@@ -1,6 +1,6 @@
 @font-face {
     font-family: netflixRegular;
-    src: url(../fonte/netflix-sans-font/NetflixSans-Regular.otf);
+    src: url(../font/netflix-sans-font/NetflixSans-Regular.woff2);
     font-weight: normal;
 }
 
@@ -16,6 +16,7 @@
 *{
     padding: 0%;
     margin: 0%;
+    font-family: netflixRegular;
 
 }
 

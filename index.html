@@ -9,8 +9,9 @@
 
 <!--Land scape - paisagem -->
 <!-- Portrit - retrato -->
+<!--screen and ( orientation : portrait)-->
    <link rel="stylesheet" href="Style/@media.css" media="screen and ( orientation : portrait)"> 
-    <link rel="shortcut icon" href="">
+    <link rel="shortcut icon" href="images/Netflix_Symbol_RGB.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -48,7 +49,7 @@
 
 <!-- lado direito mobile-->
 <aside class="menuMobile">
-    <img src="image/icons/MENU.svg" alt="menu">
+    <img onclick="abrirMenu ()" id="abrirMenu" src="image/icons/MENU.svg" alt="menu">
 </aside>
 
 
@@ -57,17 +58,72 @@
        
 
     <main>
-        <!-- imagen responsivas -->
-        <picture>
-            <source media="(min-width: 600px)" srcset="image/image/comediants in car.png">
-            <source media="(min-width: 800px)" srcset=" image/posters/177a4ee7f303df7f56745a4c0145994129a8747a.png">
-            <img src="image/image/jenesuis.png" alt="">
-        </picture>
-        
+
+        <div id="menuMobileShow">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Series TV</a></li>
+                    <li><a href="#">Em alta</a></li>
+                    <li><a href="#">Terror</a></li>
+                    <li><a href="#">Suspense</a></li>
+                    <li><a href="#">Em alta da semana</a></li>
+                    <img onclick="fecharMenu()" id="fecharMenu" src="image/icons/cancel_FILL0_wght400_GRAD0_opsz24.svg" alt="menu">
+                </ul>
+            </nav>
+        </div>
+                        <!-- imagen responsivas -->
+                    <!-- <picture>
+                    <source media="(min-width: 600px)" srcset="image/image/comediants in car.png">
+                    <source media="(min-width: 800px)" srcset=" image/posters/177a4ee7f303df7f56745a4c0145994129a8747a.png">
+                    <img src="image/image/jenesuis.png" alt="">
+                    </picture> -->
+
+
+
+
+
+        <div class="bannerGrup" id="bannerNarcos">
+            <div class="bannerTexto">
+                <h3>NETFLIX ORIGINALS</h3>
+                <h1>NARCOS</h1>
+                <h5>TEMPORADA 3</h5>
+                <p>A história verdadeira da propagação da cocaína nos Estados Unidos e na Europa, liderado por Pablo Escobar, enquanto dois agentes da DEA estão no comando de liderar uma missão para capturar e, consequentemente, matar Escobar.</p>
+            <div class="btnBanner">
+                <button type="button">
+                    <img src="image/icons/PLAY.svg" alt="play">
+                    Assistir
+                </button>
+                    <button type="button">
+                        <img src="image/icons/ADD.svg" alt="adicionar">
+                        Adicionar a lista
+                    </button>
+            </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <div class="SeriesdeTV" id="lartdudesing"></div>
+
     </main>
 
 
 
     <footer></footer>
+    <script>
+        function abrirMenu (){
+            menuMobileShow.style.display = "flex"
+        }
+
+        function fecharMenu (){
+            menuMobileShow.style.display = "none"
+
+        }
+    </script>
 </body>
 </html>

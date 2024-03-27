@@ -1,3 +1,13 @@
-body{
-    background-color: var(--vermelhoescuoNetflix);
+.menuPC{
+    display: none;
+
+}
+
+.menuMobile{
+    display: flex;
+
+}
+
+.bannerGrupo{
+    height: auto;
 }
